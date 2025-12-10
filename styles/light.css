@@ -27,7 +27,7 @@
   background-color: var(--main-bg-color);
 }
 
-.theme-light .rec_empty{
+.theme-light .rec_empty {
   display: none;
 }
 @media (prefers-color-scheme: light) {

@@ -11,7 +11,10 @@ body {
   max-inline-size: 1440px;
   margin: 0 auto;
   font-size: 18px;
+  font-weight: normal;
   line-height: 130%;
+  font-style: normal;
+  font-family: var(--main-font-family, sans-serif, monospace);
 }
 
 h1,
@@ -22,6 +25,7 @@ h5,
 h6,
 p {
   margin: 0;
+  font-size: inherit;
 }
 
 ul {
