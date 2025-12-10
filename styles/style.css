@@ -5,6 +5,7 @@
   font-family: var(--main-font-family);
   font-weight: bold;
   background-color: var(--bg-color);
+  background-image: var(--background-image);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,7 +17,6 @@
   height: 100vh;
   min-height: 668px;
   display: grid;
-  background-image: var(--background-image);
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   padding-inline: var(--padding-inline);
@@ -299,8 +299,16 @@
     grid-column: 2 / 3;
   }
 }
-@media (width < 768px) {
-
+@media (width <= 768px) {
+  :root {
+  --padding-inline: 10px;
+  --padding-block: 10px;
+  --margin-top: 40px;
+  --margin-top-big: 50px;
+  --picture-gap: 10px;
+  --header-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --footer-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
   .header {
     grid-template-columns: 1fr;
     justify-content: center;
