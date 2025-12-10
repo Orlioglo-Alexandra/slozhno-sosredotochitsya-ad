@@ -25,6 +25,7 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
   font-size: inherit;
 }
 
@@ -47,4 +48,7 @@ a {
   line-height: inherit;
   padding: 0;
   text-decoration: none;
+}
+figure {
+  margin: 0;
 }
