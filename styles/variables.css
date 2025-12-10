@@ -2,3 +2,41 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --main-font-size: 18px;
+  --main-gap: 10px;
+  --main-font-family: "IBM Plex Mono", monospace;
+  --main-line-height: 1.3;
+  --section-heading-color: #ff0070;
+  --accent-color: #ff0070;
+  --nav-color:#ff0070;
+  --main-bg-color: #000028;
+  --main-heading-color: #000028;
+  --main-text-color:#F1B2CE;
+  --header-logo-color: #DB00FF;
+  --footer-logo-color: #DB00FF;
+  --header-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --footer-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --decoration-gap: clamp(10px , 2.65vw , 20px);
+  --header-margin-left: min(10px , 384px);
+  --corner-thickness: 1px;
+  --section-grid-template-columns: 1fr;
+  --padding-inline: 20px;
+  --padding-block: 20px;
+  --margin-top: 60px;
+  --margin-top-big: 80px;
+  --nav-hover-color: 1px solid rgba(255 0 112 / 0.4);
+  --link-color: #FF0070;
+  --picture-gap: 20px;
+}
+@media (width < 768px) {
+  :root {
+  --padding-inline: 10px;
+  --padding-block: 10px;
+  --margin-top: 40px;
+  --margin-top-big: 50px;
+  --picture-gap: 10px;
+  --header-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --footer-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+}
